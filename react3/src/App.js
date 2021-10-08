@@ -1,23 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import { useState } from "react";
+import happy from "./emoji/happy.jpeg";
+import lovely from "./emoji/lovely.jpeg";
+import crazy from "./emoji/crazy.jpeg";
 
 function App() {
+  const data = [happy, lovely, crazy];
+  let counter = 0;
+  const [emoji, setEmoji] = useState();
+  const counterr = () => {
+    counter++;
+    console.log(counter % 3);
+
+    clearInterval(interval);
+  };
+  let interval = setInterval(() => {
+    setEmoji(data[counter % 3]);
+    counterr();
+  }, 2000);
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <img src={emoji} alt="" />
     </div>
   );
 }
