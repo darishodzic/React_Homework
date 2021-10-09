@@ -1,0 +1,13 @@
+.cardlist {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100vw;
+}
+
+.card {
+  width: 150px;
+  height: 150px;
+  overflow: hidden;
+  border: 1px solid rebeccapurple;
+}
