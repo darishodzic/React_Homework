@@ -1,6 +1,7 @@
 import "./App.css";
 import { useEffect, useState } from "react";
 import axios from "axios";
+import Input from "./components/Input";
 import CardList from "./components/CardList";
 import "./components/CardList.css";
 function App() {
@@ -23,10 +24,11 @@ function App() {
 
   return (
     <div className="App">
-      <input type="number" value={num} onChange={inputHandler} />
+      {/* <input type="number" value={num} onChange={inputHandler} />
       <div className="cardlist">
         <CardList data={data} />
-      </div>
+      </div> */}
+      <Input />
     </div>
   );
 }
