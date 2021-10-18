@@ -6,7 +6,6 @@ import CardList from "./components/CardList";
 import "./components/CardList.css";
 import Form from "./components/Form";
 function App() {
-  const [error, setError] = useState("");
   const [inputData, setInputData] = useState();
   const [formData, setFormData] = useState({
     firstname: "",
@@ -36,13 +35,7 @@ function App() {
       <div className="cardlist">
         <CardList data={data} />
       </div> */}
-      <Form
-        setError={setError}
-        formData={formData}
-        setFormData={setFormData}
-        setInputData={setInputData}
-      />
-      {error ? <p>{error}</p> : ""}
+      <Form />
     </div>
   );
 }
