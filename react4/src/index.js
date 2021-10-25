@@ -4,12 +4,14 @@ import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import Calculator from "./components/Calculator";
+import Dark from "./components/Dark";
+
+export const AppContext = React.createContext();
 
 ReactDOM.render(
-  <React.StrictMode>
-    {/* <App /> */}
-    <Calculator />
-  </React.StrictMode>,
+  <AppContext.Provider value={{ theme: "dark" }}>
+    <Dark />
+  </AppContext.Provider>,
   document.getElementById("root")
 );
 
