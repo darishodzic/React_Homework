@@ -5,6 +5,9 @@ import Input from "./components/Input";
 import CardList from "./components/CardList";
 import "./components/CardList.css";
 import Form from "./components/Form";
+import Col from "./components/Col";
+import Dark from "./components/Dark";
+import Calculator from "./components/Calculator";
 function App() {
   const [inputData, setInputData] = useState();
   const [formData, setFormData] = useState({
@@ -35,7 +38,12 @@ function App() {
       <div className="cardlist">
         <CardList data={data} />
       </div> */}
-      <Form />
+      <Col justify="flex-end">
+        <Calculator />
+        <Calculator />
+
+        <Calculator />
+      </Col>
     </div>
   );
 }

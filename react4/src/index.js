@@ -10,7 +10,7 @@ export const AppContext = React.createContext();
 
 ReactDOM.render(
   <AppContext.Provider value={{ theme: "dark" }}>
-    <Dark />
+    <App />
   </AppContext.Provider>,
   document.getElementById("root")
 );
