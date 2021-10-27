@@ -7,7 +7,9 @@ import "./components/CardList.css";
 import Form from "./components/Form";
 import Col from "./components/Col";
 import Dark from "./components/Dark";
+import List from "./components/List.jsx";
 import Calculator from "./components/Calculator";
+import ListItem from "./components/ListItem.jsx";
 function App() {
   const [inputData, setInputData] = useState();
   const [formData, setFormData] = useState({
@@ -38,12 +40,16 @@ function App() {
       <div className="cardlist">
         <CardList data={data} />
       </div> */}
-      <Col justify="flex-end">
-        <Calculator />
-        <Calculator />
+      <List>
+        <ListItem icon="./ninae7.jpg" text="Goood morning" />
+        <ListItem icon="./ninae7.jpg" text="Hello world" />
 
-        <Calculator />
-      </Col>
+        <ListItem icon="./ninae7.jpg" text="Cao" />
+
+        <ListItem icon="./ninae7.jpg" text="Bok" />
+
+        <ListItem icon="./ninae7.jpg" text="Hi" />
+      </List>
     </div>
   );
 }

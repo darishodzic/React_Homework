@@ -6,9 +6,10 @@ const Col = (props) => {
   return (
     <div
       style={{
-        justifyContent: justify || "center",
+        justifyConten: justify || "center",
         width: "900px",
         border: "1px solid red",
+        flexDirection: "column",
       }}
     >
       {children}
