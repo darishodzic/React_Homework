@@ -1,0 +1,17 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+table {
+  width: 850px;
+  height: 400px;
+  border: 1px solid grey;
+  margin-top: 7rem;
+}
+
+th,
+tr {
+  background-color: peru;
+}

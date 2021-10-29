@@ -10,6 +10,7 @@ import Dark from "./components/Dark";
 import List from "./components/List.jsx";
 import Calculator from "./components/Calculator";
 import ListItem from "./components/ListItem.jsx";
+import Table from "./components/Table";
 function App() {
   const [inputData, setInputData] = useState();
   const [formData, setFormData] = useState({
@@ -40,7 +41,7 @@ function App() {
       <div className="cardlist">
         <CardList data={data} />
       </div> */}
-      <List>
+      {/* <List>
         <ListItem icon="./ninae7.jpg" text="Goood morning" />
         <ListItem icon="./ninae7.jpg" text="Hello world" />
 
@@ -49,7 +50,8 @@ function App() {
         <ListItem icon="./ninae7.jpg" text="Bok" />
 
         <ListItem icon="./ninae7.jpg" text="Hi" />
-      </List>
+      </List> */}
+      <Table />
     </div>
   );
 }
