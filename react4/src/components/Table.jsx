@@ -29,7 +29,6 @@ const Table = () => {
       calories: 356,
       fat: 16,
       carbs: 49,
-      protein: 3.9,
     },
   ];
   const [data, setData] = useState(DUMMY_DATA);
