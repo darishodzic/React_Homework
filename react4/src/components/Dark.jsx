@@ -1,8 +1,7 @@
 import React, { useContext } from "react";
-import { AppContext } from "..";
 
 const Dark = () => {
-  const value = useContext(AppContext);
+  const value = useContext();
 
   return (
     <div>

@@ -6,14 +6,7 @@ import reportWebVitals from "./reportWebVitals";
 import Calculator from "./components/Calculator";
 import Dark from "./components/Dark";
 
-export const AppContext = React.createContext();
-
-ReactDOM.render(
-  <AppContext.Provider value={{ theme: "dark" }}>
-    <App />
-  </AppContext.Provider>,
-  document.getElementById("root")
-);
+ReactDOM.render(<App />, document.getElementById("root"));
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
